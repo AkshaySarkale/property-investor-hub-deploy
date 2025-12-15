@@ -15,12 +15,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Properties", href: "#properties" },
-    { name: "Why Invest", href: "#why-invest" },
-    { name: "Services", href: "#services" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "Properties", href: "/#properties" },
+    { name: "Why Invest", href: "/#why-invest" },
+    { name: "Services", href: "/#services" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
