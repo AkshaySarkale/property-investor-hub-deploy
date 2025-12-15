@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, Building, Calendar, Download, ArrowRight } from "lucide-react";
 
 const properties = [
@@ -223,10 +224,13 @@ const PropertiesSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3 mt-6">
-                  <button className="flex-1 py-3 bg-gradient-gold text-charcoal-dark font-medium rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                  <Link 
+                    to={`/property/${property.id}`}
+                    className="flex-1 py-3 bg-gradient-gold text-charcoal-dark font-medium rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
+                  >
                     View Details
                     <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </Link>
                   <button className="p-3 glass-button rounded-lg hover:border-gold/30 transition-colors">
                     <Download className="w-5 h-5 text-muted-foreground" />
                   </button>
